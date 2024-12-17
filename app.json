@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Gaston Taekwon-Do",
-    "slug": "itf-taekwon-dogaston",
-    "version": "1.0.0",
+    "name": "Fiege Taekwon-Do",
+    "slug": "fiege-taekwon-do",
+    "version": "1.3.17",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.gvaldes79.gastontaekwondo"
+      "package": "com.gvaldes79.moderntaekwondo"
     },
     "web": {
       "bundler": "metro",
@@ -41,8 +41,7 @@
           }
         }
       ],
-      "expo-video",
-      "expo-localization"
+      "expo-video"
     ],
     "experiments": {
       "typedRoutes": true
@@ -52,7 +51,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "3e511585-0b51-4b49-b422-6466d7066ee9"
+        "projectId": "282ce534-da57-40fc-b722-4b808bc0462b"
       }
     },
     "owner": "gvaldes79",

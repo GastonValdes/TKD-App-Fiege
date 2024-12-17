@@ -8,9 +8,9 @@ const menuCategoryList = [
   },
   {
     id: 2,
-    title: 'Examen',
+    title: 'Programa',
     iconName: "check-all",
-    slug: 'examen',
+    slug: 'programa',
     selected: false,
   },
   {

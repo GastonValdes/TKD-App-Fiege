@@ -53,8 +53,7 @@ const resources = {
       theory: 'Theory',
       practice: 'Practice',
       patterns: 'Patterns',
-      exam: 'Exam',
-      patterns: 'Patterns',
+      programa: 'Program',
       history: 'History',
       philosophy: 'Philosophy',
     
@@ -108,7 +107,7 @@ const resources = {
       theory: 'Teoría',
       practice: 'Práctica',
       patterns: 'Formas',
-      exam: 'Examen',
+      program: 'Programa',
       history: 'Historia',
       philosophy: 'Filosofía',
 

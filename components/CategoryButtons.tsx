@@ -16,7 +16,7 @@ const CategoryButtons: React.FC<CategoryButtonsProps> = ({ onCategoryChanged }) 
   // Define categories with their translations and icons
   const categories = [
     { id: 'Todos', translation: t('all'), iconName: 'account-group' },
-    { id: 'Examen', translation: t('exam'), iconName: 'check-all' },
+    { id: 'Programa', translation: t('program'), iconName: 'check-all' },
     { id: 'Teoria', translation: t('theory'), iconName: 'book-open-variant' },
     { id: 'Formas', translation: t('patterns'), iconName: 'karate' },
     { id: 'Historia', translation: t('history'), iconName: 'history' },
