@@ -1472,7 +1472,7 @@ export const esContent: ListingTranslationType[] = [
     },
     {
         "id": "8",
-        "name": "Cinturon Azul Roja",
+        "name": "Cinturon Azul Rojo",
         "image": "punta-roja.png",
         "description": "Programa de entrenamiento para cinturon azul rojo (3 Gup)",
         "section1":"TEORIA",
