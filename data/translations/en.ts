@@ -4202,9 +4202,9 @@ export const enContent: ListingTranslationType[] = [
     },
     {
         "id": "21",
-        "name": "shinewave Movement",
+        "name": "Shinewave Movement",
         "image": "shinewavemovement.png",
-        "description": "Taekwon-Do shinewave Movement theory",
+        "description": "Taekwon-Do shinewave movement theory",
        "section1":"",
         "titletheory1":"Shinewave Movement:",
         "theory1": "The undulating motion is unique to ITF Taekwon-do. In virtually all movements, the undulating motion is used. The undulating motion is a motion in which the body's center of gravity would form a sine wave. Two reasons lead to this motion:\n\n • Relaxation.\n • Increasing speed through a gain in height.\n\nPerforming the undulating motion of the center of gravity involves keeping the legs and arms slightly bent during the movement. This forces the body to relax, which adds speed to the technique at the end of the movement. According to the theory of power, small increases in speed produce large increases in the power of the technique.\n\nWhen using the undulating motion, the knees must be properly flexed. Flexion of the knees is what allows the body to lower and raise as it moves forward. At the end of the movement, we take advantage of gravity and speed by rapidly lowering the center of gravity. The movement of the center of mass is: down, up, down as seen in the figure:\nIn some cases the complete undulation is not performed as in the fast movements (where the second chained movement only performs up-down), connected (where the second chained movement only performs the downward movement)",
@@ -4408,7 +4408,7 @@ export const enContent: ListingTranslationType[] = [
         "imageth40a":"",
         "imageth40b":"",
         "imageth40c":"",
-        "category": "THEORY"
+        "category": "Teoria"
     },
     {
         "id": "22",
@@ -5038,7 +5038,7 @@ export const enContent: ListingTranslationType[] = [
         "imageth40a":"",
         "imageth40b":"",
         "imageth40c":"",
-        "category": "THEORY"
+        "category": "Teoria"
     },
     {
         "id": "25",
@@ -8610,7 +8610,7 @@ export const enContent: ListingTranslationType[] = [
         "imageth40b":"",
         "imageth40c":"",
         "videos": ["video1.mp4"],
-        "category": "THEORY"
+        "category": "Teoria"
     },
     {
         "id": "42",

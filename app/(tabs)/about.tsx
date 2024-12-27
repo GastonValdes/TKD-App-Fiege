@@ -28,7 +28,7 @@ const Page = (props: Props) => {
           <Text style={styles.link}>gastonvaldes@gmail.com</Text>
         </TouchableOpacity>
         <Text style={styles.textarea}>{"\n"}Colaboración y revisión de contenidos</Text>
-        <Text style={styles.textarea}>Sabum Nim Diego Fiege Vallés</Text>
+        <Text style={styles.textarea}>Sabum Diego Fiege Vallés</Text>
         <Text>5to DAN Internacional Taekwon-do ITF</Text>
       </View>
     </View>
