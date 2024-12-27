@@ -29,12 +29,16 @@ const resources = {
       language: 'Language',
       
       // About page
+
       aboutTitle: 'About',
-      version: 'Version 3.17',
+      version: 'Version 3.20',
       copyright: 'Copyright 2024',
-      danTitle: '2nd DAN International Taekwon-do ITF',
+      danTitle: '2nd Degree Black Belt Taekwon-do ITF',
       aboutText: 'I created this application to share the knowledge I acquired over 15 years of training in Taekwondo-ITF. This Application has no affiliation with the International Taekwon-Do Federation. Its content reflects the teachings of the ITF Taekwon-Do style developed by General Choi Hong Hi and documented in the Taekwon-Do Encyclopedia',
-      
+      author: 'Boo Sabum Gastón R. Valdés',
+      collaborationTitle: 'Content collaboration and review',
+      collaborator: 'Sabum Diego Fiege Vallés',
+      collaboratorTitle: '5th Degree Black Belt Taekwon-do ITF',
       // Listings page
       listingNotFound: 'Listing not found.',
       videos: 'Videos',
@@ -53,7 +57,7 @@ const resources = {
       theory: 'Theory',
       practice: 'Practice',
       patterns: 'Patterns',
-      programa: 'Program',
+      program: 'Program',
       history: 'History',
       philosophy: 'Philosophy',
     
@@ -88,7 +92,11 @@ const resources = {
       copyright: 'Copyright 2024',
       danTitle: '2do DAN Internacional Taekwon-do ITF',
       aboutText: 'Cree esta aplicación para compartir el conocimiento que adquirí a lo largo de 15 años entrenando Taekwondo-ITF. Esta Aplicacion no tiene afiliacion con la International Taekwon-Do Federation. Su contenido refleja las enseñanzas del estilo de Taekwon-Do ITF desarrollado por el General Choi Hong Hi y documentado en la Enciclopedia de Taekwon-Do',
-      
+      author: 'Boo Sabum Gastón R. Valdés',
+      collaborationTitle: 'Colaboración y revisión de contenidos',
+      collaborator: 'Sabum Diego Fiege Vallés',
+      collaboratorTitle: '5to DAN Internacional Taekwon-do ITF',
+
       // Listings page
       listingNotFound: 'Listado no encontrado.',
       videos: 'Videos',
