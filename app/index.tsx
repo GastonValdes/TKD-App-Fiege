@@ -27,7 +27,7 @@ const Page = () => {
             style={styles.title}
             entering={FadeInRight.delay(300).duration(500)}
           >
-            {t('appTitle')}
+            {t('appTitle')}{"\n"}{t('version')}
           </Animated.Text>
           <Animated.Text
             style={styles.description}
