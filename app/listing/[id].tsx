@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, Dimensions, TouchableOpacity, ScrollView, SafeAreaView, Modal } from "react-native";
+import { StyleSheet, Text, View, Image, Dimensions, TouchableOpacity, ScrollView, Modal } from "react-native";
 import React, { useEffect, useState, useRef } from "react";
 import { router, Stack, useLocalSearchParams } from "expo-router";
 import { ListingType } from '@/types/listingTypes';
@@ -7,7 +7,6 @@ import { Colors } from "@/constants/Colors";
 import Header from '@/components/Header';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
-import * as ScreenOrientation from 'expo-screen-orientation';
 import FullscreenVideoPlayer from '@/components/FullscreenVideoPlayer';
 import { Video, ResizeMode } from 'expo-av';
 import CollapsibleTheoryBlock from "@/components/CollapsibleTheoryBlock";
@@ -18,9 +17,10 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useTranslation } from 'react-i18next';
 import { useTranslatedContent } from '@/hooks/useTranslatedContent';
+import { WebView } from 'react-native-webview';
 
 const { width, height } = Dimensions.get('window');
-    
+   
 // Your existing imageMapping object here
 const imageMapping: Record<string, any> = {
     "blanco.png": require("@/assets/images/blanco.png"),
@@ -92,6 +92,7 @@ const ListingDetails = () => {
     const [status, setStatus] = useState({});
     const [showAlert, setShowAlert] = useState(false);
     const [alertMessage, setAlertMessage] = useState('');
+    const [selectedVideoId, setSelectedVideoId] = useState<string>('');
 
     // Animation values
     const scale = useSharedValue(1);
@@ -113,8 +114,19 @@ const ListingDetails = () => {
         scale.value = 1;
         translateX.value = 0;
         translateY.value = 0;
-        setSelectedMedia(mediaSource);
-        setIsVideo(isVideoFile(fileName));
+        
+        // Handle YouTube videos
+        const isYouTube = fileName.startsWith('youtube:');
+        if (isYouTube) {
+            const youtubeId = fileName.split(':')[1];
+            setSelectedVideoId(youtubeId);
+            setSelectedMedia(null); // Set to null for YouTube videos
+        } else {
+            setSelectedMedia(mediaSource);
+            setSelectedVideoId('');
+        }
+        
+        setIsVideo(isYouTube || isVideoFile(fileName));
         setIsModalVisible(true);
     };
 
@@ -155,6 +167,7 @@ const ListingDetails = () => {
     const renderTheoryBlock = (index: number) => {
         const titleKey = `titletheory${index}` as keyof typeof listing;
         const theoryKey = `theory${index}` as keyof typeof listing;
+        const videosKey = `videos${index}` as keyof typeof listing;
         const sources = imageSources[index - 1];
 
         if (!listing?.[titleKey] && !listing?.[theoryKey] && !sources.a && !sources.b && !sources.c) {
@@ -167,6 +180,7 @@ const ListingDetails = () => {
                     title={listing?.[titleKey] as string}
                     theory={listing?.[theoryKey] as string}
                 >
+                    {/* Render images if available */}
                     {(sources.a || sources.b || sources.c) && (
                         <ScrollView
                             horizontal
@@ -176,6 +190,50 @@ const ListingDetails = () => {
                             {sources.a && renderTouchableImage(sources.a, styles.imageSec)}
                             {sources.b && renderTouchableImage(sources.b, styles.imageSec)}
                             {sources.c && renderTouchableImage(sources.c, styles.imageSec)}
+                        </ScrollView>
+                    )}
+                    
+                    {/* Render specific videos for this theory block if available */}
+                    {listing?.[videosKey] && Array.isArray(listing[videosKey]) && (
+                        <ScrollView
+                            horizontal
+                            showsHorizontalScrollIndicator={false}
+                            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}
+                        >
+                            {(listing[videosKey] as string[]).map((videoName, vidIndex) => {
+                                const isYouTube = videoName.startsWith('youtube:');
+                                const youtubeId = isYouTube ? videoName.split(':')[1] : '';
+                                const videoSource = isYouTube ? null : imageMapping[videoName];
+                
+                                return (
+                                    <TouchableOpacity 
+                                        key={vidIndex}
+                                        onPress={() => handleMediaPress(videoSource, videoName)}
+                                    >
+                                        <View style={styles.videoContainer}>
+                                            {isYouTube ? (
+                                                <Image
+                                                    source={{ uri: `https://img.youtube.com/vi/${youtubeId}/0.jpg` }}
+                                                    style={styles.videoThumbnail}
+                                                />
+                                            ) : (
+                                                <Video
+                                                    source={videoSource}
+                                                    style={styles.videoThumbnail}
+                                                    resizeMode={ResizeMode.COVER}
+                                                    shouldPlay={false}
+                                                    isMuted={true}
+                                                    useNativeControls={false}
+                                                    isLooping={false}
+                                                />
+                                            )}
+                                            <View style={styles.playButtonOverlay}>
+                                                <Ionicons name="play-circle" size={30} color="white" />
+                                            </View>
+                                        </View>
+                                    </TouchableOpacity>
+                                );
+                            })}
                         </ScrollView>
                     )}
                 </CollapsibleTheoryBlock>
@@ -195,24 +253,32 @@ const ListingDetails = () => {
                     contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}
                 >
                     {listing.videos.map((videoName, index) => {
-                        const videoSource = imageMapping[videoName];
-                        if (!videoSource) return null;
-
+                        const isYouTube = videoName.startsWith('youtube:');
+                        const youtubeId = isYouTube ? videoName.split(':')[1] : '';
+                        const videoSource = isYouTube ? null : imageMapping[videoName];
+    
                         return (
                             <TouchableOpacity 
                                 key={index}
                                 onPress={() => handleMediaPress(videoSource, videoName)}
                             >
                                 <View style={styles.videoContainer}>
-                                    <Video
-                                        source={videoSource}
-                                        style={styles.videoThumbnail}
-                                        resizeMode={ResizeMode.COVER}
-                                        shouldPlay={false}
-                                        isMuted={true}
-                                        useNativeControls={false}
-                                        isLooping={false}
-                                    />
+                                    {isYouTube ? (
+                                        <Image
+                                            source={{ uri: `https://img.youtube.com/vi/${youtubeId}/0.jpg` }}
+                                            style={styles.videoThumbnail}
+                                        />
+                                    ) : (
+                                        <Video
+                                            source={videoSource}
+                                            style={styles.videoThumbnail}
+                                            resizeMode={ResizeMode.COVER}
+                                            shouldPlay={false}
+                                            isMuted={true}
+                                            useNativeControls={false}
+                                            isLooping={false}
+                                        />
+                                    )}
                                     <View style={styles.playButtonOverlay}>
                                         <Ionicons name="play-circle" size={30} color="white" />
                                     </View>
@@ -439,65 +505,76 @@ const ListingDetails = () => {
                     <Text style={styles.sectiontitle}>{listing.section3}</Text>
                     {Array.from({ length: 19 }, (_, i) => renderTheoryBlock(i + 22))}
                     
+                    {/* Add main videos section if available */}
                     <View style={styles.videoBlock}>
                         {renderVideos(listing)}
                     </View>
                 </ScrollView>
+                
                 <Modal
-    visible={isModalVisible}
-    transparent={true}
-    onRequestClose={() => {
-        scale.value = withSpring(1);
-        translateX.value = withSpring(0);
-        translateY.value = withSpring(0);
-        setIsModalVisible(false);
-    }}
-    animationType="fade"
->
-    <GestureHandlerRootView style={{ flex: 1 }}>
-        <View style={styles.modalContainer}>
-            <TouchableOpacity 
-                style={styles.closeButton}
-                onPress={() => {
-                    scale.value = withSpring(1);
-                    translateX.value = withSpring(0);
-                    translateY.value = withSpring(0);
-                    setIsModalVisible(false);
-                }}
-            >
-                <Feather name="x" size={30} color="white" />
-            </TouchableOpacity>
-            
-            {isVideo ? (
-                <FullscreenVideoPlayer
-                    source={selectedMedia}
-                    isVisible={isModalVisible}
-                    onClose={() => {
+                    visible={isModalVisible}
+                    transparent={true}
+                    onRequestClose={() => {
+                        scale.value = withSpring(1);
+                        translateX.value = withSpring(0);
+                        translateY.value = withSpring(0);
                         setIsModalVisible(false);
                     }}
-                />
-            ) : (
-                <GestureDetector gesture={composed}>
-                    <Animated.View style={[styles.modalBackground]}>
-                        <Animated.Image
-                            source={selectedMedia}
-                            style={[styles.fullScreenImage, animatedStyle]}
-                            resizeMode="contain"
-                        />
-                    </Animated.View>
-                </GestureDetector>
-            )}
-        </View>
-    </GestureHandlerRootView>
-</Modal>
-
-</View>
+                    animationType="fade"
+                >
+                    <GestureHandlerRootView style={{ flex: 1 }}>
+                        <View style={styles.modalContainer}>
+                            <TouchableOpacity 
+                                style={styles.closeButton}
+                                onPress={() => {
+                                    scale.value = withSpring(1);
+                                    translateX.value = withSpring(0);
+                                    translateY.value = withSpring(0);
+                                    setIsModalVisible(false);
+                                }}
+                            >
+                                <Feather name="x" size={30} color="white" />
+                            </TouchableOpacity>
+                            
+                            {isVideo ? (
+                                selectedVideoId ? (
+                                    <WebView
+                                        style={{
+                                            width: width * 0.9,
+                                            height: height * 0.4,
+                                        }}
+                                        source={{
+                                            uri: `https://www.youtube.com/embed/${selectedVideoId}?playsinline=1&autoplay=1`
+                                        }}
+                                        allowsFullscreenVideo={true}
+                                    />
+                                ) : (
+                                    <FullscreenVideoPlayer
+                                        source={selectedMedia}
+                                        isVisible={isModalVisible}
+                                        onClose={() => {
+                                            setIsModalVisible(false);
+                                        }}
+                                    />
+                                )
+                            ) : (
+                                <GestureDetector gesture={composed}>
+                                    <Animated.View style={[styles.modalBackground]}>
+                                        <Animated.Image
+                                            source={selectedMedia}
+                                            style={[styles.fullScreenImage, animatedStyle]}
+                                            resizeMode="contain"
+                                        />
+                                    </Animated.View>
+                                </GestureDetector>
+                            )}
+                        </View>
+                    </GestureHandlerRootView>
+                </Modal>
+            </View>
         </>
     );
 };
-
-
-
 
 const styles = StyleSheet.create({
     modalContainer: {
@@ -674,7 +751,6 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
         elevation: 5,
     },
-
 });
 
 export default ListingDetails;
