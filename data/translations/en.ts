@@ -8,7 +8,7 @@ export const enContent: ListingTranslationType[] = [
     "description": "Training program for whhite belt (10 Gup)",
     "section1": "THEORY",
     "titletheory1":"Taekwon-Do practicioner promise",
-    "theory1": "1) I will honor the principles of Taekwon-Do \n 2) I will respect my instructors and seniors \n 3) I will not misuse Taekwon-Do \n 4) I will champion justice and freedom \n 5) I will help build a better and more peaceful world",
+    "theory1": " 1) I will honor the principles of Taekwon-Do \n 2) I will respect my instructors and seniors \n 3) I will not misuse Taekwon-Do \n 4) I will champion justice and freedom \n 5) I will help build a better and more peaceful world",
     "titletheory2":"What country does Taekwon-Do come from?",
     "theory2": "Taekwon-Do comes from Korea, the birthplace of its founder.",
     "titletheory3":"Who was the founder of Taekwon-Do?",
