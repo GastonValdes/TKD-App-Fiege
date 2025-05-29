@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.gvaldes79.fiegetaekwondo"
+      "package": "com.gvaldes79.moderntaekwondo"
     },
     "web": {
       "bundler": "metro",
