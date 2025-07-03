@@ -31,7 +31,7 @@ const resources = {
       // About page
 
       aboutTitle: 'About',
-      version: 'Version 3.31',
+      version: 'Version 3.3.2',
       copyright: 'Copyright 2024',
       danTitle: '2nd Degree Black Belt Taekwon-do ITF',
       aboutText: 'I created this application to share the knowledge I acquired over 15 years of training in Taekwondo-ITF. This Application has no affiliation with the International Taekwon-Do Federation. Its content reflects the teachings of the ITF Taekwon-Do style developed by General Choi Hong Hi and documented in the Taekwon-Do Encyclopedia',
@@ -88,7 +88,7 @@ const resources = {
       
       // About page
       aboutTitle: 'Acerca De',
-      version: 'Versión 3.31',
+      version: 'Versión 3.3.2',
       copyright: 'Copyright 2024',
       danTitle: '2do DAN Internacional Taekwon-do ITF',
       aboutText: 'Cree esta aplicación para compartir el conocimiento que adquirí a lo largo de 15 años entrenando Taekwondo-ITF. Esta Aplicacion no tiene afiliacion con la International Taekwon-Do Federation. Su contenido refleja las enseñanzas del estilo de Taekwon-Do ITF desarrollado por el General Choi Hong Hi y documentado en la Enciclopedia de Taekwon-Do',
@@ -128,35 +128,41 @@ const resources = {
   }
 };
 
-// Language persistence
+// Constants
 const LANGUAGE_KEY = '@app_language';
+const getDefaultLanguage = () => {
+  const locale = Localization.locale;
+  return typeof locale === 'string' ? locale.split('-')[0] : 'en';
+};
 
-const loadSavedLanguage = async () => {
+// Load saved or fallback language
+const loadSavedLanguage = async (): Promise<string> => {
   try {
-    const savedLanguage = await AsyncStorage.getItem(LANGUAGE_KEY);
-    return savedLanguage || Localization.locale.split('-')[0];
-  } catch (error) {
-    return Localization.locale.split('-')[0];
+    const storedLang = await AsyncStorage.getItem(LANGUAGE_KEY);
+    return storedLang || getDefaultLanguage();
+  } catch {
+    return getDefaultLanguage();
   }
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: Localization.locale.split('-')[0],
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false
-    }
-  });
-
-// Load saved language
-loadSavedLanguage().then(lang => {
-  i18n.changeLanguage(lang);
+// Init
+i18n.use(initReactI18next).init({
+  resources,
+  lng: getDefaultLanguage(),
+  fallbackLng: 'en',
+  interpolation: {
+    escapeValue: false,
+  },
 });
 
-// Function to change and persist language
+// Apply saved language override if available
+loadSavedLanguage().then((lang) => {
+  if (lang !== i18n.language) {
+    i18n.changeLanguage(lang);
+  }
+});
+
+// Exposed function
 export const changeLanguage = async (lang: string) => {
   try {
     await AsyncStorage.setItem(LANGUAGE_KEY, lang);
