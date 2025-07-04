@@ -11,16 +11,16 @@ interface CategoryButtonsProps {
 
 const CategoryButtons: React.FC<CategoryButtonsProps> = ({ onCategoryChanged }) => {
   const { t } = useTranslation();
-  const [activeCategory, setActiveCategory] = useState('Todos');
+  const [activeCategory, setActiveCategory] = useState('Programa');
 
   // Define categories with their translations and icons
   const categories = [
-    { id: 'Todos', translation: t('all'), iconName: 'account-group' },
     { id: 'Programa', translation: t('program'), iconName: 'check-all' },
     { id: 'Teoria', translation: t('theory'), iconName: 'book-open-variant' },
     { id: 'Formas', translation: t('patterns'), iconName: 'karate' },
     { id: 'Historia', translation: t('history'), iconName: 'history' },
     { id: 'Filosofia', translation: t('philosophy'), iconName: 'draw-pen' },
+    { id: 'Todos', translation: t('all'), iconName: 'account-group' },
   ];
 
   const handleCategoryPress = (categoryId: string) => {

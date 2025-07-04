@@ -7,7 +7,7 @@ import Listings from '@/components/Listings';
 
 const Page = () => {
   const { top: safeTop } = useSafeAreaInsets();
-  const [category, setCategory] = useState('Todos');
+  const [category, setCategory] = useState('Programa');
   
   const onCatChanged = (category: string) => {
     setCategory(category);
