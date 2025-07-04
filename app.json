@@ -2,7 +2,7 @@
   "expo": {
     "name": "Fiege Taekwon-Do",
     "slug": "fiege-taekwon-do",
-    "version": "3.3.2",
+    "version": "3.3.3",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
