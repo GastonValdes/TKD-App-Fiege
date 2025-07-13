@@ -73,6 +73,9 @@ const imageMapping: Record<string, any> = {
     "1erDAN.png": require("@/assets/images/1erDAN.png"),
     "2doDAN.png": require("@/assets/images/2doDAN.png"),
     "3erDAN.png": require("@/assets/images/3erDAN.png"),
+    "4torDAN.png": require("@/assets/images/4toDAN.png"),
+    "5toDAN.png": require("@/assets/images/5toDAN.png"),
+    "6toDAN.png": require("@/assets/images/6toDAN.png"),
     "10_kwanggae.png": require("@/assets/images/10_kwanggae.png"),
     "ITF_Patterns_Poster_LowRes.png": require("@/assets/images/ITF_Patterns_Poster_LowRes.png"),
     "powerbrake2.png": require("@/assets/images/powerbrake2.png"),    
@@ -340,91 +343,99 @@ const ListingDetails = () => {
             : imageMapping[imagePath];
     };
 
-    const createNumberedImageSources = (num: number) => ({
-        a: createImageSource(listing?.[`imageth${num}a` as keyof typeof listing] as string),
-        b: createImageSource(listing?.[`imageth${num}b` as keyof typeof listing] as string),
-        c: createImageSource(listing?.[`imageth${num}c` as keyof typeof listing] as string)
-    });
-
-    const imageSources = Array.from({ length: 40 }, (_, i) => createNumberedImageSources(i + 1));
-
-    // More complex render functions
-    const renderTheoryBlock = (index: number) => {
-        const titleKey = `titletheory${index}` as keyof typeof listing;
-        const theoryKey = `theory${index}` as keyof typeof listing;
-        const videosKey = `videos${index}` as keyof typeof listing;
-        const sources = imageSources[index - 1];
-
-        if (!listing?.[titleKey] && !listing?.[theoryKey] && !sources.a && !sources.b && !sources.c) {
-            return null;
-        }
-
-        return (
-            <View key={index} style={styles.blocks}>
-                <CollapsibleTheoryBlock
-                    title={listing?.[titleKey] as string}
-                    theory={listing?.[theoryKey] as string}
-                >
-                    {/* Render images if available */}
-                    {(sources.a || sources.b || sources.c) && (
-                        <ScrollView
-                            horizontal
-                            showsHorizontalScrollIndicator={false}
-                            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}
-                        >
-                            {sources.a && renderTouchableImage(sources.a, styles.imageSec)}
-                            {sources.b && renderTouchableImage(sources.b, styles.imageSec)}
-                            {sources.c && renderTouchableImage(sources.c, styles.imageSec)}
-                        </ScrollView>
-                    )}
-                    
-                    {/* Render specific videos for this theory block if available */}
-                    {listing?.[videosKey] && Array.isArray(listing[videosKey]) && (
-                        <ScrollView
-                            horizontal
-                            showsHorizontalScrollIndicator={false}
-                            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}
-                        >
-                            {(listing[videosKey] as string[]).map((videoName, vidIndex) => {
-                                const isYouTube = videoName.startsWith('youtube:');
-                                const youtubeId = isYouTube ? videoName.split(':')[1] : '';
-                                const videoSource = isYouTube ? null : imageMapping[videoName];
-                
-                                return (
-                                    <TouchableOpacity 
-                                        key={vidIndex}
-                                        onPress={() => handleMediaPress(videoSource, videoName)}
-                                    >
-                                        <View style={styles.videoContainer}>
-                                            {isYouTube ? (
-                                                <Image
-                                                    source={{ uri: `https://img.youtube.com/vi/${youtubeId}/0.jpg` }}
-                                                    style={styles.videoThumbnail}
-                                                />
-                                            ) : (
-                                                <Video
-                                                    source={videoSource}
-                                                    style={styles.videoThumbnail}
-                                                    resizeMode={ResizeMode.COVER}
-                                                    shouldPlay={false}
-                                                    isMuted={true}
-                                                    useNativeControls={false}
-                                                    isLooping={false}
-                                                />
-                                            )}
-                                            <View style={styles.playButtonOverlay}>
-                                                <Ionicons name="play-circle" size={30} color="white" />
-                                            </View>
-                                        </View>
-                                    </TouchableOpacity>
-                                );
-                            })}
-                        </ScrollView>
-                    )}
-                </CollapsibleTheoryBlock>
-            </View>
-        );
+   const createNumberedImageSources = (num: number) => {
+    const aKey = `imageth${num}a` as keyof typeof listing;
+    const bKey = `imageth${num}b` as keyof typeof listing;
+    const cKey = `imageth${num}c` as keyof typeof listing;
+    
+    return {
+        a: listing?.[aKey] ? createImageSource(listing[aKey] as string) : null,
+        b: listing?.[bKey] ? createImageSource(listing[bKey] as string) : null,
+        c: listing?.[cKey] ? createImageSource(listing[cKey] as string) : null
     };
+};
+
+const imageSources = Array.from({ length: 40 }, (_, i) => createNumberedImageSources(i + 1));
+
+   // Replace your renderTheoryBlock function with this fixed version:
+
+const renderTheoryBlock = (index: number) => {
+    const titleKey = `titletheory${index}` as keyof typeof listing;
+    const theoryKey = `theory${index}` as keyof typeof listing;
+    const videosKey = `videos${index}` as keyof typeof listing;
+    const sources = imageSources[index - 1];
+
+    // Add null check for sources
+    if (!listing?.[titleKey] && !listing?.[theoryKey] && (!sources || (!sources.a && !sources.b && !sources.c))) {
+        return null;
+    }
+
+    return (
+        <View key={index} style={styles.blocks}>
+            <CollapsibleTheoryBlock
+                title={listing?.[titleKey] as string}
+                theory={listing?.[theoryKey] as string}
+            >
+                {/* Render images if available - add null check for sources */}
+                {sources && (sources.a || sources.b || sources.c) && (
+                    <ScrollView
+                        horizontal
+                        showsHorizontalScrollIndicator={false}
+                        contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}
+                    >
+                        {sources.a && renderTouchableImage(sources.a, styles.imageSec)}
+                        {sources.b && renderTouchableImage(sources.b, styles.imageSec)}
+                        {sources.c && renderTouchableImage(sources.c, styles.imageSec)}
+                    </ScrollView>
+                )}
+                
+                {/* Render specific videos for this theory block if available */}
+                {listing?.[videosKey] && Array.isArray(listing[videosKey]) && (
+                    <ScrollView
+                        horizontal
+                        showsHorizontalScrollIndicator={false}
+                        contentContainerStyle={{ flexGrow: 1, justifyContent: 'center' }}
+                    >
+                        {(listing[videosKey] as string[]).map((videoName, vidIndex) => {
+                            const isYouTube = videoName.startsWith('youtube:');
+                            const youtubeId = isYouTube ? videoName.split(':')[1] : '';
+                            const videoSource = isYouTube ? null : imageMapping[videoName];
+            
+                            return (
+                                <TouchableOpacity 
+                                    key={vidIndex}
+                                    onPress={() => handleMediaPress(videoSource, videoName)}
+                                >
+                                    <View style={styles.videoContainer}>
+                                        {isYouTube ? (
+                                            <Image
+                                                source={{ uri: `https://img.youtube.com/vi/${youtubeId}/0.jpg` }}
+                                                style={styles.videoThumbnail}
+                                            />
+                                        ) : (
+                                            <Video
+                                                source={videoSource}
+                                                style={styles.videoThumbnail}
+                                                resizeMode={ResizeMode.COVER}
+                                                shouldPlay={false}
+                                                isMuted={true}
+                                                useNativeControls={false}
+                                                isLooping={false}
+                                            />
+                                        )}
+                                        <View style={styles.playButtonOverlay}>
+                                            <Ionicons name="play-circle" size={30} color="white" />
+                                        </View>
+                                    </View>
+                                </TouchableOpacity>
+                            );
+                        })}
+                    </ScrollView>
+                )}
+            </CollapsibleTheoryBlock>
+        </View>
+    );
+};
 
     const renderVideos = (listing: ListingType) => {
         if (!listing.videos || listing.videos.length === 0) return null;

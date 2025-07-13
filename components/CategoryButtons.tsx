@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Colors } from '@/constants/Colors';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+
 interface CategoryButtonsProps {
   onCategoryChanged: (category: string) => void;
 }
@@ -16,11 +17,16 @@ const CategoryButtons: React.FC<CategoryButtonsProps> = ({ onCategoryChanged }) 
   // Define categories with their translations and icons
   const categories = [
     { id: 'Programa', translation: t('program'), iconName: 'check-all' },
-    { id: 'Teoria', translation: t('theory'), iconName: 'book-open-variant' },
+//    { id: 'Teoria', translation: t('theory'), iconName: 'book-open-variant' },
     { id: 'Formas', translation: t('patterns'), iconName: 'karate' },
+    { id: 'Combate', translation: t('combat'), iconName: 'alarm-bell' },
     { id: 'Historia', translation: t('history'), iconName: 'history' },
     { id: 'Filosofia', translation: t('philosophy'), iconName: 'draw-pen' },
-    { id: 'Todos', translation: t('all'), iconName: 'account-group' },
+    { id: 'Mociones', translation: t('motions'), iconName: 'sine-wave' },
+    { id: 'Rotura', translation: t('brake'), iconName: 'image-broken-variant' },
+    { id: 'Do', translation: t('do'), iconName: 'road-variant' },
+    { id: 'Arbitraje', translation: t('arbitraje'), iconName: 'whistle-outline' },
+//    { id: 'Todos', translation: t('all'), iconName: 'account-group' },    
   ];
 
   const handleCategoryPress = (categoryId: string) => {

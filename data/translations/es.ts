@@ -619,7 +619,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"Movimiento ondulatorio (movimiento de onda):",
         "theory1": "El movimiento ondulatorio es único al Taekwon-do ITF. En prácticamente todos los movimientos se utiliza la ondulación. La ondulación es un movimiento en el cual el centro de gravedad del cuerpo formaría una onda sinusoidal. Dos motivos llevan a este movimiento:\n\n• La relajación.\n• EI aumento de la velocidad a través de una ganancia en la altura.\n\nRealizar el movimiento del centro de gravedad en forma ondulante implica mantener ligeramente flexionadas las piernas y brazos durante el movimiento. Esto obliga a relajar el cuerpo lo cual agrega velocidad a la técnica al finalizar el movimiento. Acorde a la teoría del poder pequeños aumentos de la velocidad produce grandes incrementos en el poder de la técnica.\n\nAl emplear el movimiento ondulatorio hay que flexibilizar las rodillas adecuadamente. La flexión de las rodillas es la que permite al cuerpo bajar y subir a medida que avanza. Al finalizar el movimiento aprovechamos la gravedad y la velocidad al bajar rápidamente el centro de gravedad. El movimiento del centro de masa es: abajo, arriba, abajo como se ve en la figura:\nEn algunos casos no se realiza la ondulación completa como en los movimientos rápido (donde el segundo movimiento encadenado sólo arriba-abajo), conectado (donde el segundo movimiento encadenado realiza sólo el movimiento hacia abajo)",
         "imageth1a":"shinewavemovement.png",
-        "category": "Teoria"
+        "category": "Mociones"
     },
     {
         "id": "12",
@@ -702,7 +702,7 @@ export const esContent: ListingTranslationType[] = [
         "theory7": "Combate casi real, sin ejercicios ni combinaciones predeterminadas, dónde la única regla es que no puede haber ningún contacto entre los luchadores.\n\n Solo se intercambia una única serie de movimientos de ataque y defensa, en una duración de tiempo muy corta.\nEl enfrentamiento semi libre es la última etapa antes de que el estudiante llegue al combate libre, aunque se lo puede ejercitar en todos los niveles",
         "titletheory8":"JAYU MATSOGI 자유 맛소기 (Combate libre)",
         "theory8": "El combate libre es esencialmente un combate abierto con ataques controlados y la prohibicion de atacar ciertos puntos vitales.\nEn el combate libre no hay nada predeterminado por los luchadores, y cada uno está enteramente libre para atacar y defender por todos los medios posibles con una excepció: El atacante debe detener la herramienta de ataque, justo antes de alcanzar un punto vital.\nYa que el Taekwon-Do es una forma letal de autodefensa, las reglas del combate a diferencia con otros deportes de competicion sólo se contarán los golpes marcados a 2 cm del punto vital, y no los golpes inútiles o la utilización de la fuerza bruta.\nEn el combate se consideran los golpes bien enfocados, la velocidad, la potencia, el equilibrio, y el bloqueo firme y preciso, como un ezquive eficaz y el comportamento.",
-        "category": "Teoria"
+        "category": "Combate"
     },
     {
         "id": "16",
@@ -898,30 +898,119 @@ export const esContent: ListingTranslationType[] = [
         "name": "주체 Juche",
         "image": "2doDAN.png",
         "description": "Forma de Cinturon Negro 2do DAN",
-      "section1":"",
+        "section1":"",
         "titletheory1":"주체 Juche",
         "theory1": "Juche:\nMovimientos 45\n\nJuche es la idea filosófica según la cual el hombre es el amo de todo y decide sobre todo, en otras palabras, la idea de que el hombre es el amo del mundo. Se dice que esta idea tiene sus raíces en la montaña Baekdu, que simboliza el espíritu del pueblo coreano. El diagrama representa la montaña Baekdu.",
         "category": "Formas"
     },
-
     {
         "id": "32",
+        "name": "삼일 SAM-IL ",
+        "image": "3erDAN.png",
+        "description": "Forma de Cinturon Negro 3er DAN",
+        "section1":"",
+        "titletheory1":"삼일 SAM-IL",
+        "theory1": "SAM-IL:\nMovimientos 33\n\nDenota la fecha histórica del movimiento por la independencia de Korea el cual comenzó en todo el país el 1° de marzo de 1919. Los 33 movimientos de este Tul representan a los 33 patriotas que planearon el movimiento.",
+        "category": "Formas"
+    },
+    {
+        "id": "33",
+        "name": "유신 YOO-SIN",
+        "image": "3erDAN.png",
+        "description": "Forma de Cinturon Negro 3er DAN",
+        "section1":"",
+        "titletheory1":"유신 YOO-SIN",
+        "theory1": "YOO-SIN:\nMovimientos 68\n\nEs llamado así por el Comandante General Kim Yoo Sin, quien actuó durante la Dinastía Silla. Los 68 movimientos se refieren a las 2 últimas figuras del año 668 después de Cristo, el año en que Korea se unió. La postura de preparado, significa una espada enfundada a la derecha en vez de la izquierda, simbolizando el error de Yoo Sin, de seguir las ordenes del Rey de pelear con fuerzas extranjeras en contra de su propia nación.",
+        "category": "Formas"
+    },
+    {
+        "id": "34",
+        "name": "최용 CHOI-YONG",
+        "image": "3erDAN.png",
+        "description": "Forma de Cinturon Negro 3er DAN",
+        "section1":"",
+        "titletheory1":"최용 CHOI-YONG",
+        "theory1": "CHOI-YONG:\nMovimientos 46\n\nEs llamado así por el General Choi Yong, Premier y Comandante en Jefe de las Fuerzas Armadas durante el siglo XIV, durante la Dinastía Koryo. Choi Yong fue grandemente respetado por su lealtad, patriotismo y humildad. Él fue ejecutado por sus comandantes subordinados, encabezados por el General Yi Sung Gae, quien mas tarde sería el primer Rey de la Dinastía Lee.",
+        "category": "Formas"
+    },    
+    {
+        "id": "35",
+        "name": "연개 YON-GAE",
+        "image": "4toDAN.png",
+        "description": "Forma de Cinturon Negro 4to DAN",
+        "section1":"",
+        "titletheory1":"연개 YON-GAE",
+        "theory1": "YON-GAE:\nMovimientos 49\n\nEs llamado así por un famoso General de la Dinastía de Koguryo, Yon Gae Somoon. Los 49 movimientos se refieren a las 2 últimas figuras del año 649 después de Cristo, el año en que él forzó a la Dinastía Tang para dejar Korea, luego de destruir cerca de 300.000 soldados de sus tropas en Ansi Sung.",
+        "category": "Formas"
+    },    
+    {
+        "id": "36",
+        "name": "을지 UL-JI ",
+        "image": "4toDAN.png",
+        "description": "Forma de Cinturon Negro 4to DAN",
+        "section1":"",
+        "titletheory1":"을지 UL-JI",
+        "theory1": "UL-JI:\nMovimientos 42\n\nEs llamado así por el General Ul-Ji Moon Dok quien defendió satisfactoriamente Korea de las fuerzas de invasión de la Dinastía Tang, que contaban con cerca de 1.000.000 de hombres conducidos por Yang Je en el año 612 después de Cristo. Ul-Ji, empleando tácticas de golpes y corridas de guerrillas, fue capaz de destruir un gran porcentaje de la fuerza. El diagrama (L) representa su apellido. Los 42 movimientos representan la edad del autor cuando diseño este Tul.",
+        "category": "Formas"
+    },    
+    {
+        "id": "37",
+        "name": "문무 MOON-MOO",
+        "image": "4toDAN.png",
+        "description": "Forma de Cinturon Negro 4to DAN",
+        "section1":"",
+        "titletheory1":"문무 MOON-MOO",
+        "theory1": "MOON-MOO:\nMovimientos 61\n\nEs llamado así en honor al trigésimo Rey de la Dinastía Silla. Su cuerpo fue enterrado cerca de Dae Wang Am (Roca del Gran Rey). De acuerdo a su voluntad su cuerpo fue puesto en el mar, 'Donde mi alma debe defender para siempre mi tierra en contra de los japoneses'. Se dice que el Sok Gul Am (Caverna de Piedra) fue construida para guardar su tumba. El Sok Gul Am es un buen ejemplo de la cultura de la Dinastía Silla. Los 61 movimientos en este Tul, simbolizan las 2 últimas figuras del año 661 después de Cristo, cuando Moon Moo accedió al trono.",
+        "category": "Formas"
+    },
+    {
+        "id": "38",
+        "name": "소산 SO-SAN",
+        "image": "5toDAN.png",
+        "description": "Forma de Cinturon Negro 5to DAN",
+        "section1":"",
+        "titletheory1":"소산 SO-SAN",
+        "theory1": "SO-SAN:\nMovimientos 72\n\nEs el seudónimo del gran monje Choi Hyong Ung (1520-1604) durante la Dinastía Lee. Los 72 movimientos se refieren a su edad cuando organizó un cuerpo de monjes soldados con la asistencia de su pupilo Sa Myung Dang. Los monjes soldados ayudaron a repudiar a los piratas japoneses quienes asediaron la mayoría de la peninsula de Korea en el año 1592.",
+        "category": "Formas"
+    },
+    {
+        "id": "39",
+        "name": "세종 SE-JONG",
+        "image": "5toDAN.png",
+        "description": "Forma de Cinturon Negro 5to DAN",
+        "section1":"",
+        "titletheory1":"세종 SE-JONG",
+        "theory1": "SE-JONG:\nMovimientos 24\n\nEs llamado así por el más grande de los reyes de Korea, Se-Jong, quien inventó el alfabeto coreano en el año 1443, siendo también un notable meteorólogo. El diagrama de este Tul (Z) representa al Rey, mientras que los 24 movimientos se refieren a las 24 letras del alfabeto coreano.",
+        "category": "Formas"
+    },
+    {
+        "id": "40",
+        "name": "통일 TONG-IL",
+        "image": "6toDAN.png",
+        "description": "Forma de Cinturon Negro 6to DAN",
+        "section1":"",
+        "titletheory1":"통일 TONG-IL",
+        "theory1": "TONG-IL:\nMovimientos 56\n\nDenota la resolución de la unificación de Korea la cual ha estado dividida desde 1945. El diagrama (') simboliza la homogeneidad de la raza.",
+        "category": "Formas"
+    },
+    {
+        "id": "41",
         "name": "Rotura de poder 퀴크 파",
         "image": "powerbrake.jpg",
         "description": "Practica de rotura de poder",
-      "section1":"",
+        "section1":"",
         "titletheory1":"Rotura de Poder Kyuck Pa 퀴크 파",
         "theory1": "la rotura de tablas (u otros objetos como ladrillos o hielo en exhibiciones avanzadas) es una de las actividades favoritas tanto de los practicantes como de los expectadores que asisten a ver exhibiciones de Taekwon-Do.\n La rotura de tablones demuestra la eficacia de las técnicas y ayuda a comprender el efecto que pueden tener en un objetivo.\nEsta práctica se realiza en pruebas de grado, y la seguridad es siempre algo primordial.\n.Esta actividad enseña al estudiante a concentrarse, ejecutar correctamente las técnicas, así como a vencer las barreras mentales y a mejorar su confianza. ",
         "imageth1a":"powerbrake2.png",
         "videos": ["video1.mp4"],
-        "category": "Teoria"
+        "category": "Rotura"
     },
     {
-        "id": "33",
+        "id": "42",
         "name": "Carta del Taekwon-Do",
         "image": "carta.jpg",
         "description": "Taekwon-Do Jon Zang 존 장",
-      "section1":"",
+        "section1":"",
         "titletheory1":"PREAMBULO",
         "theory1": "Ya que el Taekwon-Do es un arte de autodefensa que aitende a un noble rearme moral, a un alto grado de cumplimiento intelectual, a técnicas elegantes, y a la belleza de la forma físisca se puede considerar como parte de la vida cotidiana, tal como la respiración y el pensamiento\nComo fundador del Taekwon-Do, quiero definir su filosofía, sus principios y su objectivo a fin de que estos sean utilizados para llegar al florecimiento de la moralidad, de la belleza y del poder, en armonia con el espiritu inmortal.",
         "titletheory2":"PARTE 1",
@@ -941,11 +1030,11 @@ export const esContent: ListingTranslationType[] = [
         "category": "Filosofia"
     },
     {
-        "id": "34",
+        "id": "43",
         "name": "Cultura Moral 정신수양",
         "image": "moral3.png",
         "description": "Cultura Moral Jungshin sooyang 정신수양",
-      "section1":"",
+        "section1":"",
         "titletheory1":"Connotaciones",
         "theory1": "Las connotaciones diversas y las varias interpretaciones posibles de la cultura moral son a menudo muy dificiles de captar para una mente occidental, debido a que es un aspecto de la filosofía oriental que se infiltra en la vida de los orientales. Por decirlo en una palabra, es el esfuerzo constante y el proceso para llegar a ser una persona ejemplar como Confusio (552-479 AC).\nPara ser tal persona, uno tiene que primero encontrarse a si mismo y adquirir un carácter moral que sea respetado por los demás. Así, si llega ese día, el hombre mentalmente disciplinado puede contribuir a la construcción de una sociedad ideal, dándole consejos sabios al gobierno y aún despues de la muerte a través de su ejemplo eterno.\nConfusio dijo:<<Para promover el sentido de la moralidad uno tiene que actuar con los otros con una lealtad y una sinceridad basadas en la rectitud, y eliminar sus pensamientos viciosos>>.",
         "imageth1a":"culturamoral.png",
