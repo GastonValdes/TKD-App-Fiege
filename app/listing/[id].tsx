@@ -690,6 +690,12 @@ const ListingDetails = () => {
                     <Text style={styles.sectiontitle}>{listing.section3}</Text>
                     {Array.from({ length: 19 }, (_, i) => renderTheoryBlock(i + 22))}
                     
+                    <Text style={styles.sectiontitle}>{listing.section4}</Text>
+                    {Array.from({ length: 19 }, (_, i) => renderTheoryBlock(i + 41))}
+
+                    <Text style={styles.sectiontitle}>{listing.section5}</Text>
+                    {Array.from({ length: 19 }, (_, i) => renderTheoryBlock(i + 60))}
+
                     {/* Add main videos section if available */}
                     <View style={styles.videoBlock}>
                         {renderVideos(listing)}
