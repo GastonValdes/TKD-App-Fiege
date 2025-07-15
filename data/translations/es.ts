@@ -740,6 +740,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"천지 Chon-Ji",
         "theory1": "Chon-Ji: Es la primera forma o tul del Taekwon-Do ITF, correspondiente al cinturón blanco punta amarilla o IX Gup.\nPosee 19 movimientos.\n \nSignifica literalmente `cielo y tierra`, la unión de ambos elementos. En países orientales simboliza el principio de todo, al ser el primer tul del practicante. \n \n Chon-Ji: Diagrama \n El diagrama de Chon-Ji representa una cruz, simbolizando los cuatro elementos: fuego, agua, tierra y aire.",
         "imageth1a":"1_chonji.png",
+        "imageth1b":"CHON-JI.jpg",
         "titletheory2":"<Proximamente Video>",
         "category": "Formas"
     },
@@ -752,6 +753,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"단군 Dan-Gun",
         "theory1": "Es la segunda forma o tul del Taekwon-Do ITF, correspondiente al cinturón amarillo u IIX Gup. Posee 21 movimientos.\nDan-Gun es a honor del santo Dan-Gun el fundador de Corea en el año 2333 antes de Cristo.\nEl diagrama de Dan-Gun es una I mayúscula, o el número 1 romano (I)",
         "imageth1a":"2_dangun.png",
+        "imageth1b":"DAN-GUN.jpg",
         "titletheory2":"<Proximamente Video>",
         "category": "Formas"
     },
