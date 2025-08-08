@@ -741,7 +741,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Chon-Ji: Es la primera forma o tul del Taekwon-Do ITF, correspondiente al cinturón blanco punta amarilla o IX Gup.\nPosee 19 movimientos.\n \nSignifica literalmente `cielo y tierra`, la unión de ambos elementos. En países orientales simboliza el principio de todo, al ser el primer tul del practicante. \n \n Chon-Ji: Diagrama \n El diagrama de Chon-Ji representa una cruz, simbolizando los cuatro elementos: fuego, agua, tierra y aire.",
         "imageth1a":"1_chonji.png",
         "imageth1b":"CHON-JI.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -754,7 +754,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Es la segunda forma o tul del Taekwon-Do ITF, correspondiente al cinturón amarillo u IIX Gup. Posee 21 movimientos.\nDan-Gun es a honor del santo Dan-Gun el fundador de Corea en el año 2333 antes de Cristo.\nEl diagrama de Dan-Gun es una I mayúscula, o el número 1 romano (I)",
         "imageth1a":"2_dangun.png",
         "imageth1b":"DAN-GUN.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -767,7 +767,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Do-San, Es la tercera forma o tul del Taekwon-Do ITF, correspondiente al cinturón amarillo punta verde o VII Gup. Posee 24 movimientos.\n\nSignificado de Do-San:\nEs el seudónimo del patriota Ahn Chang-Ho, fue un prócer coreano, pedagogo y activista a favor de la independencia coreana durante la Ocupación japonesa de ese país. Los 24 movimientos representan su vida, la cual dedicó al movimiento independentista y a la educación en Corea.",
         "imageth1a":"3_dosan.png",
         "imageth1b":"DO-SAN.jpg",        
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -780,7 +780,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Significado: Fue el notable monje que introdujo el budismo en la dinastía Silla en el año 686 A.C. posee 28 Movimientos.",
         "imageth1a":"4_wonhyo.png",
         "imageth1b":"WON-HYO.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -793,7 +793,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Yul-Gok.\nMOVIMIENTOS: 38\nSe denomina así por el término Yul-Gok, el cual era el seudónimo del filósofo y catedrático YiI (1536-1584), quien era considerado como El Confucio de Corea. Los 38 movimientos de este Tul se refieren a su lugar de nacimiento en los 38 grados de latitud.\n\nEl significado de su diagrama es `el erudito` (maestro).",
         "imageth1a":"5_yulguk.png",
         "imageth1b":"YUL-GOK.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -806,7 +806,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Joong-Gun \nMovimientos: 32\nSignificado: Proviene del nombre del patriota Ahn Joong Gun quien asesinó a Hiro Bumi Ito, el primer gobernador general japonés de Corea, conocido por ser el hombre que desempeño el papel principal en la fusión Corea-Japón.\nLos 32 movimiento representan la edad en que fue ejecutado en la cárcel de Lui Shung en 1910",
         "imageth1a":"6_joonggun.png",
         "imageth1b":"JOONG-GUN.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -819,7 +819,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Toy Gye \nMovimientos: 37\nsignificado: Es el nombre del célebre erudito Yi-Hwang (siglo XVI) autoridad en temas del confucionismo. Los 37 movimientos representan su lugar de nacimiento sobre el paralelo 37º.\n\nEl diagrama significa `erudito`",
         "imageth1a":"7_toigye.png",
         "imageth1b":"TOI-GYE.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -832,7 +832,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Hwa Rang \nMovimientos: 29\nSignificado: Es el nombre de un grupo de jóvenes, que tienen su origen en la dinastía Silla al principio del Siglo VII.\n\nLos 29 movimientos se refieren a la 29º División de Infantería, donde el Taekwon-Do se desarrolló y maduró.",
         "imageth1a":"8_hwarang.png",
         "imageth1b":"HWA-RANG.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -845,7 +845,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Choong-Moo\nMovimientos: 30\nRepresenta: Es el nombre dado al gran almirante Yi Soon-Sin de la dinastía Lee. Tuvo importancia por haber inventado el primer barco de guerra armado (`Kobukson`) en 1592, el cual dió origen a los submarinos modernos.",
         "imageth1a":"9_choongmoo.png",
         "imageth1b":"CHOONG-MOO.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -858,7 +858,7 @@ export const esContent: ListingTranslationType[] = [
         "theory1": "Kwang-Gae\nMovimientos 39\n\nEl nombre de Kwang-Gae se debe al famoso Kwang-Gae-Toh-Wang, el decimonoveno rey de la dinastía Koguryo, que recuperó todos los territorios perdidos, incluida la mayor parte de Manchuria. El diagrama representa la expansión y recuperación del territorio perdido. Los 39 movimientos hacen referencia a las dos primeras cifras del año 391 d. C., año en que subió al trono.",
         "imageth1a":"10_kwanggae.png",
         "imageth1b":"KWANG-GAE.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -870,7 +870,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"포은 Po-Eun",
         "theory1": "Po-Eun:\nMovimientos 36\n\nEs el seudónimo de un súbdito leal, Chong Mong-Chu (1400), que fue un poeta famoso y cuyo poema `No serviría a un segundo amo aunque me crucificaran cien veces` es conocido por todos los coreanos. También fue un pionero en el campo de la física. El diagrama representa su infalible lealtad al rey y al país hacia el final de la dinastía Koryo.",
         "imageth1a":"PO-EUN.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -882,7 +882,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"게백 Ge-Baek",
         "theory1": "Ge-Baek:\nMovimientos 44\n\nEl nombre de esta forma se debe a Ge-Baek, un gran general de la dinastía Baek Je (660 d. C.). El diseño representa su severa y estricta disciplina militar.",
         "imageth1a":"GE-BAEK.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -894,7 +894,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"의암 Eui-Am",
         "theory1": "Eui-Am:\nMovimientos 45\n\nEui-Am es el seudónimo de Son Byong Hi, el líder del movimiento de independencia de Corea del 1 de marzo de 1919. Los 45 movimientos hacen referencia a su edad cuando cambió el nombre de Dong Hak (Cultura Oriental) a Chondo Kyo (Religión del Camino Celestial) en 1905. El diagrama representa su espíritu indomable mostrado mientras se dedicaba a la prosperidad de su nación.",
         "imageth1a":"EUI-AM.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -906,7 +906,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"충장 Choong-Jang",
         "theory1": "Choong-Jang:\nMovimientos 52\n\nChoong-Jang es el seudónimo que se le dio al general Kim Duk Ryang, que vivió durante la dinastía Yi, en el siglo XIV. Este patrón termina con un ataque con la mano izquierda para simbolizar la tragedia de su muerte a los 27 años en prisión antes de poder alcanzar la madurez completa.",
         "imageth1a":"CHOONG-JANG.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -918,7 +918,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"주체 Juche",
         "theory1": "Juche:\nMovimientos 45\n\nJuche es la idea filosófica según la cual el hombre es el amo de todo y decide sobre todo, en otras palabras, la idea de que el hombre es el amo del mundo. Se dice que esta idea tiene sus raíces en la montaña Baekdu, que simboliza el espíritu del pueblo coreano. El diagrama representa la montaña Baekdu.",
         "imageth1a":"JUCHE.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -930,7 +930,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"삼일 SAM-IL",
         "theory1": "SAM-IL:\nMovimientos 33\n\nDenota la fecha histórica del movimiento por la independencia de Korea el cual comenzó en todo el país el 1° de marzo de 1919. Los 33 movimientos de este Tul representan a los 33 patriotas que planearon el movimiento.",
         "imageth1a":"SAM-IL.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -942,7 +942,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"유신 YOO-SIN",
         "theory1": "YOO-SIN:\nMovimientos 68\n\nEs llamado así por el Comandante General Kim Yoo Sin, quien actuó durante la Dinastía Silla. Los 68 movimientos se refieren a las 2 últimas figuras del año 668 después de Cristo, el año en que Korea se unió. La postura de preparado, significa una espada enfundada a la derecha en vez de la izquierda, simbolizando el error de Yoo Sin, de seguir las ordenes del Rey de pelear con fuerzas extranjeras en contra de su propia nación.",
         "imageth1a":"YOO-SIN.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -954,7 +954,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"최용 CHOI-YONG",
         "theory1": "CHOI-YONG:\nMovimientos 46\n\nEs llamado así por el General Choi Yong, Premier y Comandante en Jefe de las Fuerzas Armadas durante el siglo XIV, durante la Dinastía Koryo. Choi Yong fue grandemente respetado por su lealtad, patriotismo y humildad. Él fue ejecutado por sus comandantes subordinados, encabezados por el General Yi Sung Gae, quien mas tarde sería el primer Rey de la Dinastía Lee.",
         "imageth1a":"CHOI-YONG.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },    
     {
@@ -966,7 +966,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"연개 YON-GAE",
         "theory1": "YON-GAE:\nMovimientos 49\n\nEs llamado así por un famoso General de la Dinastía de Koguryo, Yon Gae Somoon. Los 49 movimientos se refieren a las 2 últimas figuras del año 649 después de Cristo, el año en que él forzó a la Dinastía Tang para dejar Korea, luego de destruir cerca de 300.000 soldados de sus tropas en Ansi Sung.",
         "imageth1a":"YON-GAE.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },    
     {
@@ -978,7 +978,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"을지 UL-JI",
         "theory1": "UL-JI:\nMovimientos 42\n\nEs llamado así por el General Ul-Ji Moon Dok quien defendió satisfactoriamente Korea de las fuerzas de invasión de la Dinastía Tang, que contaban con cerca de 1.000.000 de hombres conducidos por Yang Je en el año 612 después de Cristo. Ul-Ji, empleando tácticas de golpes y corridas de guerrillas, fue capaz de destruir un gran porcentaje de la fuerza. El diagrama (L) representa su apellido. Los 42 movimientos representan la edad del autor cuando diseño este Tul.",
         "imageth1a":"UL-JI.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },    
     {
@@ -990,7 +990,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"문무 MOON-MOO",
         "theory1": "MOON-MOO:\nMovimientos 61\n\nEs llamado así en honor al trigésimo Rey de la Dinastía Silla. Su cuerpo fue enterrado cerca de Dae Wang Am (Roca del Gran Rey). De acuerdo a su voluntad su cuerpo fue puesto en el mar, 'Donde mi alma debe defender para siempre mi tierra en contra de los japoneses'. Se dice que el Sok Gul Am (Caverna de Piedra) fue construida para guardar su tumba. El Sok Gul Am es un buen ejemplo de la cultura de la Dinastía Silla. Los 61 movimientos en este Tul, simbolizan las 2 últimas figuras del año 661 después de Cristo, cuando Moon Moo accedió al trono.",
         "imageth1a":"MOON-MOO.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -1002,7 +1002,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"소산 SO-SAN",
         "theory1": "SO-SAN:\nMovimientos 72\n\nEs el seudónimo del gran monje Choi Hyong Ung (1520-1604) durante la Dinastía Lee. Los 72 movimientos se refieren a su edad cuando organizó un cuerpo de monjes soldados con la asistencia de su pupilo Sa Myung Dang. Los monjes soldados ayudaron a repudiar a los piratas japoneses quienes asediaron la mayoría de la peninsula de Korea en el año 1592.",
         "imageth1a":"SO-SAN.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -1014,7 +1014,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"세종 SE-JONG",
         "theory1": "SE-JONG:\nMovimientos 24\n\nEs llamado así por el más grande de los reyes de Korea, Se-Jong, quien inventó el alfabeto coreano en el año 1443, siendo también un notable meteorólogo. El diagrama de este Tul (Z) representa al Rey, mientras que los 24 movimientos se refieren a las 24 letras del alfabeto coreano.",
         "imageth1a":"SE-JONG.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -1026,7 +1026,7 @@ export const esContent: ListingTranslationType[] = [
         "titletheory1":"통일 TONG-IL",
         "theory1": "TONG-IL:\nMovimientos 56\n\nDenota la resolución de la unificación de Korea la cual ha estado dividida desde 1945. El diagrama (') simboliza la homogeneidad de la raza.",
         "imageth1a":"TONG-IL.jpg",
-        "titletheory2":"<Proximamente Video>",
+        "titletheory2":"",
         "category": "Formas"
     },
     {
@@ -1093,6 +1093,43 @@ export const esContent: ListingTranslationType[] = [
         "titletheory10":"Ser virtuoso",
         "theory10": "Es muy dificil definir lo que es, sin embargo, cinco cualidades humanas fueron consideradas como virtudes desde los tiempos mas remotos: humanidad, rectitud, cortecía, sabiduría y confianza. Pera ser virtuoso uno debe cultivar y prácticar constantemente esas vitudes.\nConfusio dijo:\n<<La virtud es como la estrella del norte, todas las estrellas giran en orden alrededor de ella. Así que los que se encuentran alrededor de personas virtuosas, actuarán naturalmente para llegar a una mejor sociedad. Cuando el mundo esta en contra mía, con alefría me pido autosuperación y cuando finalmente, el mundo me reconoce y requiere, me siento orgulloso de asistirlo>>",
         "category": "Filosofia"
-    }   
+    },
+    {
+        "id": "44",
+        "name": "Mociones del Taekwon-Do",
+        "image": "",
+        "description": "",
+        "section1":"",
+        "titletheory1":"Mociones",
+        "theory1": "Las mociones en el Taekwondo Uno de los puntos más importantes de la técnica es tener el conocimiento y la habilidad para conocer y ejecutar las mociones en Taekwondo. Hay mociones diferentes para trabajo de manos, piernas o desplazamientos.",
+        "imageth1a":"",
+        "titletheory2":"Las mociones de manos",
+        "theory2": "Para realizarlas correctamente hay que considerar cómo se comportan las siguientes\n\nvariables:\n1- Velocidad del movimiento.\n2- Velocidad entre movimientos.\n3- Característica del movimiento ondulante de cada técnica.\n4- Cómo se realiza la respiración.",
+        "titletheory3":"MOCIÓN NORMAL:",
+        "theory3": "Se refiere a un único movimiento que generalmente será un ataque o una defensa donde el tiempo de ejecución es el más veloz dentro de lo posible y el movimiento ondulante no tendrá ninguna característica especial. Este movimiento tendrá una sola respiración breve.",
+        "titletheory4":"MOCIÓN NATURAL:",
+        "theory4": "Se refiere a un único movimiento que difiere de un ataque o defensa; por lo tanto, tendrá una característica propia de velocidad y fuerza, de acuerdo a su aplicación. En general en los movimientos naturales la velocidad de las manos es coincidente con la velocidad del avance de los pies. El movimiento ondulante no tendrá ninguna característica especial. Este movimiento tendrá una sola respiración un poco más larga que la normal.",
+        "titletheory5":"MOCIÓN LENTA:",
+        "theory5": "Se refiere a un único movimiento, sea normal o natural, que se ejecuta de forma lenta con el propósito de acentuar la belleza, practicar el balance y fortalecer la musculatura. El movimiento ondulante reproducirá el movimiento ondulante original. Se realizará una sola respiración que acompañará a todo el movimiento, en una larga exhalación. » Movimientos lentos de manos avanzando: Cuando se avanza, se produce una pequeña aceleración final, producto de la dificultad de mantener la velocidad en la parte final del movimiento, por la pérdida de balance. » Movimientos lentos con patadas: Se realiza igual que con las manos, por lo tanto el movimiento es lento en todo su recorrido. Cuando llega a su fin se retoma la velocidad normal para recuperar el pie y/o apoyarlo en el piso.",
+        "titletheory6":"MOCIÓN RÁPIDA:",
+        "theory6": "Tiene ciertas particularidades en su ejecución según se esté avanzando o no. » Dos técnicas sin avanzar: Se refiere a dos movimientos encadenados, con el concepto general de aumentar la velocidad entre movimientos sin apurarlos individualmente. El movimiento ondulante para la primera técnica es normal y, al tratar de minimizar el tiempo intermedio entre movimientos, resulta que la segunda técnica carece del movimiento hacia abajo inicial, ya sea en posición de caminar como en posición en L o posición a Caballo o con un cambio de posición básica. Cada técnica tendrá una respiración breve. » Dos técnicas avanzando un paso: Sólo en la moción rápida se puede encontrar la ejecución en dos pasos y se refiere a dos movimientos que se realizan en dos pasos sucesivos con un movimiento ondulante normal en el primero y un movimiento ondulante sin bajada inciial en elsegundo, intentando acelerar el tiempo intermedio sin detrimento de la posición básica de cada paso. Tendrá dos respiraciones, una en cada técnica, y de la misma característica que en las técnicas naturales",
+        "titletheory7":"MOCIÓN CONTINUADA:",
+        "theory7": "Tiene como principal objetivo destacar la belleza y la estética del movimiento: en las formas encontramos casos de dos movimientos y también de cuatro y siete. » Dos movimientos: Se realizan dos técnicas distintas en forma continua, sin detención del movimiento, acentuando la belleza de la ejecución con dos movimientos ondulatorios unidos. La respiración consta de una inhalación y tantas exhalaciones como movimientos contenga la moción continuada. » Más de dos movimientos: En este caso la moción continuada tendrá la particularidad de que la primer técnica tendrá un movimiento ondulante normal y las sucesivas carecerán del movimiento inicial hacia abajo, aprovechando el impulso que las une.",
+        "titletheory8":"MOCIÓN CONECTADA:",
+        "theory8": "Se refiere a dos movimientos, en general uno natural y otro normal, que se realizan en forma conectada, con un sólo movimiento ondulante y una sola respiración, que comienza muy suavemente en el primer movimiento y termina breve y potente en el último.",
+        "titletheory9":"Las mociones en las patadas:",
+        "titletheory10":"PATADA RÁPIDA:",
+        "theory10": "En una secuencia de dos patadas, donde se intenta acortar el tiempo entre una y otra.",
+        "titletheory11":"PATADA CONSECUTIVA::",
+        "theory11": "Es una secuencia de dos patadas distintas que se realizan con el mismo pie, con un muy breve intermedio que no corta la continuidad del movimiento. Se realiza con una respiración por movimiento y un movimiento ondulante normal al terminar la secuencia. Pueden ser estacionarias o saltando.",
+        "titletheory12":"PATADAS DOBLES, TRIPLES, ETC.:",
+        "theory12": "Se trata de una secuencia de dos o más patadas iguales que se realizan con el mismo pie y con un muy breve intermedio que no corta la continuidad del movimiento. Se realiza con una respiración por movimiento y un movimiento ondulante normal al terminar la secuencia. Pueden ser estacionarias o saltando.",
+        "titletheory13":"Las mociones de desplazamientos:",
+        "titletheory14":"DESLIZ LARGO:",
+        "theory14": "Es la acción de desplazarse aproximadamente un ancho de hombros.",
+        "titletheory15":"DESLIZ CORTO:",
+        "theory15": "Es la acción de desplazarse mínimamente como un ajuste de distancia, aproximadamente el ancho de u",
+        "category": "Mociones"
+    }      
 
 ];
